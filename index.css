@@ -1,14 +1,13 @@
-body{
+﻿body{
 
-font-family: helveica;
 background-color: red;
+font=family: red;
 padding-60px;
 
 }
 
 #helloWorld{
 
-font-size: 24px;
-color: black;
+font-size: 36px;
 
 }
