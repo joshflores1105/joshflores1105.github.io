@@ -1,13 +1,42 @@
-﻿body{
-
-background-color: red;
-font-family: lato;
-padding-60px;
-
+body{
+  padding: 0;
+  font-family: helvetica
 }
 
-#helloWorld{
+#row-one{
+ background-color: white;
+ padding: 0 20vw;
+}
 
-font-size: 36px;
+#cell{
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
 
+#cell::before{
+  content:"";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-image: url(https://unsplash.it/1200);
+  background-size: cover;
+}
+
+#cell2{
+  height: 100vh;
+  background-color: black;
+  margin: 0 -20vw;
+  padding: 0 20vw;
+  color: white;
+}
+
+#cell3{
+  background-color: orange;
+  height: 100vh;
+  width: 100%;
 }
