@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 
 body{
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: 'Raleway';
-  z-index: -1000;
+  font-family: 'Raleway', helvetica;
+  font-weight: 400;
 }
 
 #row-one{
  position: relative;
  background-color: white;
  padding: 0 20vw;
- z-index: -999;
 }
 
 #cell{
-  background-color: transparent;
+  position: relative;
+  background-image:url(https://i.postimg.cc/J0FP78Dv/portfolio.jpg);
+  background-size: cover;
+  background-position: bottom center;
   height: 100vh;
   margin: 0 -20vw;
   padding: 0;
@@ -24,48 +28,58 @@ body{
   overflow: hidden;
 }
 
-#cell::before{
-  content:'';
-  color: black;
-  position: absolute;
-  background-image:url(https://unsplash.it/1200);
-  background-size: cover;
-  background-position: center;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
+#cell h1{
+  padding-left: 10px;
+  margin: 0;
+  color: rgba(0,0,0,.7);
+  font-size: 30vh;
+  font-weight: 800;
+  border-right: 20px solid #333;
 }
 
-#cell1H{
-  
-  font-size: 20vw;
+#cell span{
+  font-family:'Indie Flower', cursive;
+  font-size: 25vh;
   font-weight: 800;
-  background-color: red;
+  color: orange
+}
+
+#cell1Btn{
+  position: relative;
+  margin: 0;
+  width: 20vw;
+  text-align: center;
+  font-size: 5vh;
+  font-weight: 600;
+  padding: 10px;
+  color: #222;
+  border: 2px solid #222;
+  border-radius: 10px;
 }
 
 #cell2{
   height: 100vh;
   background-color: steelblue;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffa500' fill-opacity='0.6' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   margin: 0 -20vw;
   padding: 0 20vw;
   color: white;
 }
 
-#cell2::before{
-  conent:'';
-  top: 0;
-  left:0;
-  right:0;
-  border-bottom: 10px solid white;
+#cell2 h2{
+  margin:0;
+}
+
+#cell2Btn{
 }
 
 #cell3{
   background-color: orange;
-  height: 100vh;
-  width: 100%;
+  height: 20vh;
+  width: 100vw;
+  margin: 0 -20vw;
+  background-color: #ffa500;
+background-color: #ffa500;
+background-color: #ffa500;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%234682b4' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
 }
